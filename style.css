@@ -8,3 +8,12 @@ body{
 h4{
     text-align: center;
 }
+.border-box{
+    border: 1px solid black;
+    padding: 1.5rem 3em;
+    margin: 5%;
+}
+
+
+
+
