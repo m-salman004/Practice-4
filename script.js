@@ -82,7 +82,35 @@ function nextBirthday(){
     let html = "Your next birthday is <h2>" + Math.floor(daysDiff) + "</h2> days away."
     showOutput(html)
 }
-
+// Greet User
+function greetUser(){
+    clearOutput()
+    let userName = prompt("Enter your name.")
+    if(!userName){
+        error("Please type your name.")
+        return
+    }
+    var time = new Date()
+    var hour = time.getHours()
+    if(hour > 20 && hour <=  0){
+        showOutput("Good Night: <span class = 'fw-bold'>" + userName + "</span>")
+    }
+    else if(hour > 0 && hour <= 4){
+        showOutput("Have A Good Mid-Night: <span class = 'fw-bold'>" + userName + "</span>")
+    }
+    else if(hour > 4 && hour <= 12){
+        showOutput("Good Morning: <span class = 'fw-bold'>" + userName + "</span>")
+    }
+    else if(hour > 12 &&  hour <= 13){
+        showOutput("Good Noon: <span class = 'fw-bold'>" + userName + "</span>")
+    }
+    else if(hour > 13 && hour <= 16){
+        showOutput("Good Afternoon: <span class = 'fw-bold'>" + userName + "</span>")
+    }
+    else if(hour > 16 && hour <= 20){
+        showOutput("Good Evening: <span class = 'fw-bold'>" + userName + "</span>")
+    }
+}
 
 
 
