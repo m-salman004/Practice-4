@@ -111,7 +111,15 @@ function greetUser(){
         showOutput("Good Evening: <span class = 'fw-bold'>" + userName + "</span>")
     }
 }
-
+// Tell Time 1
+function tellTime1(){ 
+    var date = new Date()
+    var theHr = date.getHours()
+    var theMin = date.getMinutes()
+    var theSec = date.getSeconds()
+    let html = "You clicked the button (Tell-Time 1) @ <span class = 'fw-bold'>" + theHr + " : " + theMin + " : " + theSec +"</span></br>"
+    showOutput(html)
+}
 
 
 
