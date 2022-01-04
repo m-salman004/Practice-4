@@ -10,7 +10,10 @@ function clearInput(){
 function clearOutput(){
     document.getElementById("outputResult").innerHTML = ""
 }
-
+// Show Output
+function showOutput(outputResult){
+    document.getElementById("outputResult").innerHTML += outputResult
+}
 
 
 
