@@ -138,7 +138,19 @@ function tellTime3(){
     let html = "You clicked the button (Tell-Time 3) @ <span class = 'fw-bold'>" + theHr + " : " + theMin + " : " + theSec +"</span></br>"
     showOutput(html)
 }
-
+// Calculate Tax
+function calculateTax(){
+    clearOutput()
+    var price = prompt("Enter your price to check 17% tax.")
+    if(!price){
+        error("Please enter price to check tax.")
+        return
+    }
+    var tax = 17
+    var total = price * tax / 100
+    let html = "<span class = 'fw-bold'>Tax: </span><span class = 'text-danger fw-bold fw-18'>" + total + "</span>"
+    showOutput(html)
+}
 
 
 
