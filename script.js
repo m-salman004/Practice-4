@@ -52,7 +52,21 @@ function getNameToday(){
     let nameOfToday = "Today the day is: <h2>" + dayNames[theDay] + "</h2>"
     showOutput(nameOfToday)
 }
-
+// Calculate Days Passed
+function calculateDaysPassed(){
+    clearOutput()
+    let dob = inputValue()
+    if(!dob){
+        error("Please enter your date of birth.")
+        return
+    }
+    let today = new Date()
+    let bornDate = new Date(dob)
+    let msDiff = today.getTime() - bornDate.getTime()
+    let daysDiff = msDiff / (1000 * 60 * 60 * 24)
+    let html = "<h2>" + Math.floor(daysDiff) + "</h2> days have been passed since you born."
+    showOutput(html)
+}
 
 
 
