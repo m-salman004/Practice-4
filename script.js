@@ -169,7 +169,10 @@ function calculateTotal(){
     let html = "<span>Your entered price is: <span class = 'fw-bold fw-18'>" + price + "</span></br><span>Your entered tax is: <span class = 'text-danger fw-bold fw-18'>" + tax + "%" + " = " + total + "</span></br><span>Your Total (Price + Tax) = <span class = 'text-success fw-bold fw-18'>" + totalAmount + "</span></br><span>Your Total (Price - Tax) = <span class = 'text-success fw-bold fw-18'>" + totalAmount1 + "</span>"
     showOutput(html)
 }
-
+// Current Year In Footer
+let date = new Date()
+let year = date.getFullYear()
+document.getElementById("year").innerHTML = year
 
 
 
