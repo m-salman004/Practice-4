@@ -67,7 +67,21 @@ function calculateDaysPassed(){
     let html = "<h2>" + Math.floor(daysDiff) + "</h2> days have been passed since you born."
     showOutput(html)
 }
-
+// Next Birthday
+function nextBirthday(){
+    clearOutput()
+    let dob = inputValue()
+    if(!dob){
+        error("Please enter your date of birth.")
+        return
+    }
+    let today = new Date()
+    let nextBirthDate = new Date(dob)
+    let msDiff = nextBirthDate.getTime() - today.getTime()
+    let daysDiff = msDiff / (1000 * 60 * 60 * 24)
+    let html = "Your next birthday is <h2>" + Math.floor(daysDiff) + "</h2> days away."
+    showOutput(html)
+}
 
 
 
