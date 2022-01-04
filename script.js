@@ -151,7 +151,24 @@ function calculateTax(){
     let html = "<span class = 'fw-bold'>Tax: </span><span class = 'text-danger fw-bold fw-18'>" + total + "</span>"
     showOutput(html)
 }
-
+// Calculate Total
+function calculateTotal(){
+    clearOutput()
+    let price = prompt("Enter Price.")
+    let tax = prompt("Enter Tax.")
+    if(!price && !tax){
+        error("Please enter the number.")
+        return
+    }
+    price = Number(price)
+    let total = price * tax / 100
+    let totalAmount = price + total
+    let totalAmount1 = price - tax
+    totalAmount = Math.round(totalAmount)
+    totalAmount1 = Math.round(totalAmount1)
+    let html = "<span>Your entered price is: <span class = 'fw-bold fw-18'>" + price + "</span></br><span>Your entered tax is: <span class = 'text-danger fw-bold fw-18'>" + tax + "%" + " = " + total + "</span></br><span>Your Total (Price + Tax) = <span class = 'text-success fw-bold fw-18'>" + totalAmount + "</span></br><span>Your Total (Price - Tax) = <span class = 'text-success fw-bold fw-18'>" + totalAmount1 + "</span>"
+    showOutput(html)
+}
 
 
 
