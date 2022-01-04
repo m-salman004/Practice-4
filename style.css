@@ -1,3 +1,10 @@
+body{
+    background-color: #F1FAEE;
+}
 .nav-bg{
     background-color: #1D3557;
+}
+
+h4{
+    text-align: center;
 }
