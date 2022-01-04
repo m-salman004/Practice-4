@@ -120,7 +120,15 @@ function tellTime1(){
     let html = "You clicked the button (Tell-Time 1) @ <span class = 'fw-bold'>" + theHr + " : " + theMin + " : " + theSec +"</span></br>"
     showOutput(html)
 }
-
+// Tell Time 2
+function tellTime2(){
+    var date = new Date()
+    var theHr = date.getHours()
+    var theMin = date.getMinutes()
+    var theSec = date.getSeconds()
+    let html = "You clicked the button (Tell-Time 2) @ <span class = 'fw-bold'>" + theHr + " : " + theMin + " : " + theSec +"</span></br>"
+    showOutput(html)
+}
 
 
 
