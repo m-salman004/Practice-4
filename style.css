@@ -26,5 +26,14 @@ h4{
 .button-b{
     margin: .5% 40%;
 }
+.footer{
+    line-height: 40px;
+    background-color: #1D3557;
+}
 
+.footer p{
+    color: white;
+    text-align: center;
+    margin: 0;
+}
 
