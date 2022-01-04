@@ -44,6 +44,14 @@ function tellTime(){
 document.getElementById("originalBox").innerHTML = new Date()
 
 var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+// Get Name Today
+function getNameToday(){
+    clearOutput()
+    let theDate = new Date()
+    let theDay = theDate.getDay()
+    let nameOfToday = "Today the day is: <h2>" + dayNames[theDay] + "</h2>"
+    showOutput(nameOfToday)
+}
 
 
 
