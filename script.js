@@ -31,7 +31,15 @@ function error(innerText){
         onClick: function(){} // Callback after click
       }).showToast();
 }
-
+// Tell Time
+function tellTime(){
+    var date = new Date()
+    var theHr = date.getHours()
+    var theMin = date.getMinutes()
+    var theSec = date.getSeconds()
+    let html = "You clicked the button @ <span class = 'fw-bold'>" + theHr + " : " + theMin + " : " + theSec +"</span>"
+    showOutput(html)
+}
 
 
 
