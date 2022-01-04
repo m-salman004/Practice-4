@@ -40,7 +40,10 @@ function tellTime(){
     let html = "You clicked the button @ <span class = 'fw-bold'>" + theHr + " : " + theMin + " : " + theSec +"</span>"
     showOutput(html)
 }
+// Current Date and Time
+document.getElementById("originalBox").innerHTML = new Date()
 
+var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 
 
 
